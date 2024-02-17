@@ -28,7 +28,7 @@ export class Post extends Model<Post, IPostCreationAttrs> {
   id: number;
 
   @ApiProperty({ example: 'Some title text...', description: 'Title' })
-  @Column({ type: DataType.STRING, unique: true, allowNull: false })
+  @Column({ type: DataType.STRING, allowNull: false })
   title: string;
 
   @ApiProperty({ example: 'Some conent text...', description: 'Content' })
